@@ -1,9 +1,10 @@
 class LineItem
 
-	attr_accessor :line_number
+	attr_accessor :line_number, :food_list
 
-	def initialize(line_number=1)
+	def initialize(line_number=1, food=[])
 		@line_number = line_number
+		@food_list = food
 	end
 
 end
