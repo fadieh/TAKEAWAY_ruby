@@ -7,4 +7,8 @@ class LineItem
 		@food_list = food
 	end
 
+	def add_food(food)
+		food_list << food
+	end
+
 end

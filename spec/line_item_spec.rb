@@ -2,6 +2,8 @@ require 'line_item'
 
 describe LineItem do
 
+	let(:steak) { double :steak, class: Food}
+
 	context "When initialised" do
 
 		it "It'll have a line number" do
@@ -19,6 +21,9 @@ describe LineItem do
 	context "It should" do
 
 		it "be able to add food to the list" do
+			line = LineItem.new(1)
+			line.add_food(steak)
+			expect(line.food_list).to eq [steak]
 		end
 
 	end
