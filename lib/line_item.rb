@@ -18,7 +18,7 @@ class LineItem
 	end
 
 	def to_s
-		"#{food_list.count} x #{food_list[0].name} £" + total.to_s + ".00"
+		"#{food_list.count} x #{food_list[1].name} £" + total.to_s + ".00"
 	end
 
 end
