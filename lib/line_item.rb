@@ -1,3 +1,5 @@
+require_relative 'food'
+
 class LineItem
 
 	attr_accessor :line_number, :food_list
@@ -9,6 +11,14 @@ class LineItem
 
 	def add_food(food)
 		food_list << food
+	end
+
+	def total
+		(food_list.map {|food| food.price}).inject(:+)
+	end
+
+	def to_s
+		"#{food_list.count} x #{food_list[0].name} £" + total.to_s + ".00"
 	end
 
 end
