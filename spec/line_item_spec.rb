@@ -40,6 +40,8 @@ describe LineItem do
 			expect(line.to_s).to eq("2 x Steak £20.00")
 		end
 
+		
+
 	end
 
 end
