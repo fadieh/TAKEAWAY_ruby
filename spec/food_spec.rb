@@ -1,4 +1,4 @@
-require 'food'
+require 'takeaway/food'
 
 describe Food do
 

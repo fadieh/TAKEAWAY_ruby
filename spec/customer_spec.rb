@@ -1,4 +1,4 @@
-require 'customer'
+require 'takeaway/customer'
 
 describe Customer do
 

@@ -1,4 +1,4 @@
-require 'menu'
+require 'takeaway/menu'
 
 describe Menu do
 

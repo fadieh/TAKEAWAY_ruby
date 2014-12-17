@@ -1,4 +1,4 @@
-require 'line_item'
+require 'takeaway/line_item'
 
 describe LineItem do
 
